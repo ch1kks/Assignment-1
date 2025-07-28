@@ -1,0 +1,192 @@
+body {
+    width: 1920px;
+    height: 5429px;
+    background-image: url(Image/Layout.png);
+    object-fit: cover;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.button-icon {
+    float: right;
+    margin-right: 1120px;
+    margin-top: 820px;
+    display: flex;
+    align-items: center;
+  	top: 150px;
+  	left: 1200px;
+  	width: 80px;
+  	height: 80px;
+  	object-fit: cover;
+}
+#button{
+    width: auto;
+    cursor: pointer;
+}
+.lng-tri-ting {
+  	position: absolute;
+  	top: 19.03%;
+  	left: 35.35%;
+}
+.ngn-nga-trm {
+  	position: absolute;
+  	top: 19.79%;
+  	left: 40.76%;
+}
+.thin-nhin-cnh {
+  	position: absolute;
+  	top: 24.17%;
+  	left: 19.65%;
+}
+.ha-trong-ting {
+  	position: absolute;
+  	top: 24.96%;
+  	left: 31.97%;
+}
+.tu-khc-tha {
+  	position: absolute;
+  	top: 8428px;
+  	left: 1385px;
+}
+.ting-lng-ngn {
+  	position: absolute;
+  	top: 8504px;
+  	left: 1386px;
+  	display: inline-block;
+  	width: 505px;
+}
+.thng-giang {
+  	position: absolute;
+  	top: 8850px;
+  	left: 1638px;
+}
+.khi-lng-ng {
+  	position: absolute;
+  	top: 4100px;
+  	left: 409px;
+}
+.lc-vt-cao {
+  	position: absolute;
+  	top: 3836px;
+  	left: 1021px;
+}
+.m-ly-ting {
+  	position: absolute;
+  	top: 4317px;
+  	left: 1056px;
+}
+.nng-ting-so {
+  	position: absolute;
+  	width: 30.35%;
+  	top: 69%;
+  	left: 21%;
+  	text-align: center;
+  	display: inline-block;
+}
+.ca-ngi-thn {
+  	position: absolute;
+  	top: 70%;
+  	left: 45%;
+  	text-align: center;
+}
+.anh-tu-khc {
+  	position: absolute;
+  	width: 7.42%;
+  	top: 72%;
+  	left: 37.93%;
+  	color: #333100;
+  	text-align: center;
+  	display: inline-block;
+}
+.bn-tay-em {
+  	position: absolute;
+  	height: 2.89%;
+  	width: 9.24%;
+  	top: 72%;
+  	left: 60%;
+  	color: #333100;
+  	text-align: center;
+  	display: inline-block;
+}
+.b-tre-nghing {
+  	position: absolute;
+  	width: 17.07%;
+  	top: 58%;
+  	left: 11.06%;
+  	display: inline-block;
+}
+.vt-cn-gi {
+  	position: absolute;
+  	width: 19.44%;
+  	top: 58%;
+  	left: 74.42%;
+  	display: inline-block;
+}
+.layout {
+  	width: 100%;
+  	position: relative;
+  	height: 9607px;
+  	overflow-y: auto;
+  	text-align: left;
+  	font-size: 32px;
+  	color: #4a470a;
+  	font-family: Lemonada;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+#leaf-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    pointer-events: none;
+}
+
+.leaf {
+    position: absolute;
+    width: 30px;
+    height: 65px;
+    background-image: url('Image/leaf.png'); 
+    background-size: cover;
+    animation: fall linear infinite, wind linear infinite;
+    transform-origin: 50% -100%; 
+}
+
+@keyframes fall {
+    0% {
+        top: -10px;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        top: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes wind {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(var(--wind-strength)) rotate(var(--wind-rotation));
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
